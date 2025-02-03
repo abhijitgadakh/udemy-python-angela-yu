@@ -1,0 +1,539 @@
+=====================================================
+======================== Day 2 Goals what we will make by the end of the day
+
+Day 2 Overview - Tip Calculator Project
+
+- Topic for Today: Data types, numbers, operations, type conversion, f-strings, and more.
+- By the end of the day, you'll have enough knowledge to build a tip calculator.
+  
+Tip Calculator Project Steps:
+1. Welcome Message: "Welcome to the tip calculator!"
+2. Input Data:
+   - Ask for the total bill amount (e.g., $124.54).
+   - Ask for the tip percentage (e.g., 12%).
+   - Ask how many people the bill will be split between (e.g., 5 people).
+3. Calculation: 
+   - The program will calculate how much each person needs to pay based on the inputs.
+
+Key Skills Learned:
+- Working with numbers.
+- Type conversion: Converting data types from one type to another.
+- F-strings for formatting strings.
+  
+Encouragement: 
+- If you feel confident, you can skip ahead, but there will be many valuable lessons ahead that will make you a better developer!
+
+=====================================================
+======================== Python Primitive Data Types
+
+Data Types Overview:
+
+1. String:
+   - A string is a sequence of characters enclosed in quotes.
+   - Example: "hello", "world".
+   - Each character in a string has a specific position or index.
+     - Index starts at 0.
+   - Example:
+     print("hello"[0])  # Output: 'h'
+   - You can extract characters by specifying the index inside square brackets [].
+
+2. Integer:
+   - An integer is a whole number, no decimal places.
+   - Example: 123, -456.
+   - Integer arithmetic can be performed (addition, subtraction, multiplication, etc.).
+   - Example:
+     print(123 + 345)  # Output: 468
+
+3. Float:
+   - A float is a number with decimal points.
+   - Example: 3.14, -0.99.
+   - The decimal point "floats" around the number.
+   - Example:
+     pi = 3.14159  # This is a float
+
+4. Boolean:
+   - A boolean can have one of two values: True or False.
+   - Example:
+     is_raining = True
+     is_sunny = False
+
+---
+
+Important Operations:
+
+1. String Operations:
+   - Concatenation: Combine strings using +.
+     Example:
+       print("Hello" + " " + "World!")  # Output: "Hello World!"
+   - Multiplication: Repeat a string using *.
+     Example:
+       print("Hi! " * 3)  # Output: "Hi! Hi! Hi!"
+
+2. Arithmetic Operations (for integers and floats):
+   - Addition (+), Subtraction (-), Multiplication (*), Division (/)
+     Example:
+       print(10 + 5)  # Output: 15
+       print(10 - 5)  # Output: 5
+       print(10 * 5)  # Output: 50
+       print(10 / 5)  # Output: 2.0
+       
+
+Operations on Strings:
+1. Len function: Returns the length of a string.
+   Example:
+     print(len("hello"))  # Output: 5
+
+2. Type Conversion:
+   - You can convert between different data types (e.g., from string to integer).
+   - int(): Converts a string or float to an integer.
+   - float(): Converts a string or integer to a float.
+   - str(): Converts a number or boolean to a string.
+
+   Example:
+     print(int("123") + 10)  # Output: 133
+     print(str(123) + " dollars")  # Output: "123 dollars"
+   
+3. Type Error:
+   - Type errors occur when trying to perform an operation on incompatible types.
+   Example:
+     print("123" + 345)  # This will result in a TypeError because "123" is a string and 345 is an integer.
+
+=====================================================
+======================== Type Error, Type Checking and Type Conversion
+
+Functions Overview:
+
+1. What are functions?
+   - Functions are like machines in a factory.
+   - Imagine a machine that turns potatoes into chips.
+     - The machine might peel, wash, cut, fry, and return the chips to you.
+   - Similarly, functions take inputs (potatoes), process them, and return outputs (chips).
+   - You don't need to know how the machine works, just that it produces a result.
+
+2. What happens if the wrong input is passed to the function?
+   - If you try to pass an incompatible input (like a rock instead of potatoes), the machine will break. 
+   - Similarly, when you pass the wrong data type to a function, you get an error (like the TypeError).
+   - Example: The `len()` function works with strings, not integers.
+
+---
+
+Understanding Type Errors:
+
+1. Example with `len()` function:
+   - The `len()` function expects a string, but passing an integer causes a TypeError.
+     Example:
+       name = input("What is your name? ")
+       num_char = len(name)
+       print("Your name has " + num_char + " characters.")
+   - This will break because `num_char` is an integer and you're trying to concatenate it with a string.
+
+2. Why does it break?
+   - You can't concatenate a string with an integer directly. This causes a TypeError.
+   - Solution: Convert `num_char` into a string using type conversion.
+
+---
+
+Using the `type()` Function:
+
+1. What does `type()` do?
+   - The `type()` function tells you what type of data you're working with.
+   - Example:
+     print(type(123))  # Output: <class 'int'>
+     print(type("Hello"))  # Output: <class 'str'>
+
+2. Check the data type of variables:
+   - If you're not sure about the data type, use `type()` to find out.
+
+---
+
+Type Conversion (Casting):
+
+1. What is type conversion?
+   - Type conversion (or type casting) is changing a data type to another.
+   - Example:
+     - Convert an integer to a string using the `str()` function.
+     - Convert a string to an integer using the `int()` function.
+     - Convert an integer to a float using the `float()` function.
+
+2. Example of type conversion:
+   - You can convert an integer (`num_char`) to a string to avoid breaking the code.
+   - Code:
+     ```python
+     num_char = 6
+     new_num_char = str(num_char)
+     print("Your name has " + new_num_char + " characters.")  # Output: Your name has 6 characters.
+     ```
+   - This works because the data type of `new_num_char` is now a string, and you can safely concatenate it with other strings.
+
+---
+
+Converting Between Different Data Types:
+
+1. Convert an integer to a string:
+   - Example:
+     ```python
+     a = 123
+     print(type(a))  # Output: <class 'int'>
+     a = str(a)
+     print(type(a))  # Output: <class 'str'>
+     ```
+
+2. Convert an integer to a float:
+   - Example:
+     ```python
+     a = 123
+     print(type(a))  # Output: <class 'int'>
+     a = float(a)
+     print(type(a))  # Output: <class 'float'>
+     ```
+
+---
+
+Examples with Type Conversion:
+
+1. Integer to String:
+   - You can convert integers to strings to avoid concatenation errors.
+   - Example:
+     ```python
+     num = 100
+     print(str(num) + " is a number.")  # Output: "100 is a number."
+     ```
+
+2. String to Float:
+   - You can also convert strings to floats for mathematical operations.
+   - Example:
+     ```python
+     number_str = "100.5"
+     result = float(number_str) + 70
+     print(result)  # Output: 170.5
+     ```
+
+3. String Concatenation:
+   - If you add a string to another string, you'll get concatenation.
+   - Example:
+     ```python
+     str1 = "70"
+     str2 = "100"
+     print(str1 + str2)  # Output: 70100
+     ```
+
+---
+
+In Summary:
+
+1. Use `type()` to check the data type of a variable.
+2. Use `str()`, `int()`, or `float()` to convert between data types.
+3. Type conversion prevents errors when combining different data types (e.g., strings with numbers).
+4. Be mindful of the data types you're working with to avoid TypeErrors.
+
+=====================================================
+======================== [Interactive Coding Exercise] Data Types
+
+Exercise: Add the digits in a two-digit number
+
+Goal:
+- Write a program to add the digits in a two-digit number (e.g., 39 -> 3 + 9 = 12).
+
+Steps to solve:
+
+1. Get the first and second digits:
+   - Input comes as a string, so use the `input()` function to capture the number.
+   - Use indexing to get individual digits from the string:
+     - `two_digit_number[0]` gives the first digit as a string.
+     - `two_digit_number[1]` gives the second digit as a string.
+
+2. Convert string to integer:
+   - To perform mathematical operations, convert the string to an integer using `int()`.
+   - Example:
+     ```python
+     first_digit = int(two_digit_number[0])
+     second_digit = int(two_digit_number[1])
+     ```
+
+3. Add the digits:
+   - Add the two integer digits.
+   - Example:
+     ```python
+     result = first_digit + second_digit
+     ```
+
+4. Print the result:
+   - Use `print()` to output the result.
+   - Example:
+     ```python
+     print(result)
+     ```
+
+Best Practices:
+- Code readability is important:
+  - Always prioritize readability over minimizing the number of lines.
+  - Someone else should be able to understand your code easily.
+  - Avoid "Code Golf" (writing the least number of lines). Focus on clear, understandable code.
+
+Summary:
+- Use `input()` to get the number as a string.
+- Use indexing and `int()` to extract and convert digits.
+- Add the digits and print the result.
+- Write readable code, not just concise code.
+
+=====================================================
+======================== Mathematical Operations in Python
+
+Mathematical Operations in Python:
+
+1. Addition (+):
+   - Adds two numbers.
+   - Can also be used to concatenate strings.
+
+2. Subtraction (-):
+   - Subtracts one number from another.
+   - Example: `7 - 3` gives `4`.
+
+3. Multiplication (*):
+   - Uses the asterisk `*` for multiplication (not `x`).
+   - Example: `3 * 2` gives `6`.
+
+4. Division (/)
+   - Uses the forward-slash `/` for division.
+   - Result is always a float, even if the division is exact.
+   - Example: `6 / 3` gives `2.0`.
+
+5. Exponentiation ()
+   - Use `` for exponents (raising a number to a power).
+   - Example: `2  3` gives `8`.
+
+   - Python’s built-in exponentiation is highly appreciated by data scientists and mathematicians.
+
+6. PEMDAS Rule (Order of operations):
+   - Parentheses
+   - Exponents
+   - Multiplication and Division (from left to right)
+   - Addition and Subtraction (from left to right)
+   - Multiplication and Division are equally prioritized, and the order is left to right.
+   - Addition and Subtraction have the lowest priority.
+
+7. Example Calculation:
+   - For the equation `3 * 3 + 3 / 3 - 3`:
+     - Multiplication and Division happen first (from left to right).
+     - Step-by-step: 
+       - `3 * 3` = `9`
+       - `3 / 3` = `1`
+       - `9 + 1` = `10`
+       - `10 - 3` = `7`
+     - Result = `7.0`.
+
+8. Changing Calculation Order:
+   - To change the result, use parentheses to adjust the priority of operations.
+   - For example, adding parentheses around `3 + 3` in `3 * (3 + 3) / 3 - 3` changes the result:
+     - First calculate `3 + 3` = `6`
+     - Then `3 * 6` = `18`
+     - Then `18 / 3` = `6`
+     - Finally `6 - 3` = `3`.
+
+9. Challenge:
+   - The parentheses allow us to prioritize operations in a specific order and change the outcome of the calculations.
+
+Key Takeaways:
+- Python supports basic mathematical operations like addition, subtraction, multiplication, division, and exponentiation.
+- The order of operations (PEMDAS) is important to remember.
+- Use parentheses to control the priority of operations and ensure the calculation occurs as intended.
+
+Next Step:
+- Try out a new challenge in the following lesson to test your understanding of these concepts.
+
+=====================================================
+======================== [Interactive Coding Exercise] BMI Calculator
+
+Body Mass Index (BMI) Calculation - Notes
+
+1. What is BMI?
+   - BMI is a measure of weight in relation to height.
+   - It helps to assess if someone is overweight, underweight, or in a healthy weight range.
+   - Formula: 
+     BMI = weight (kg) / height (m)^2
+   - The formula uses weight in kilograms and height in meters.
+   - Important: Inputs should be in metric units (kg and meters).
+
+2. Steps to Calculate BMI in Python:
+   - Convert the weight and height inputs into the appropriate data types.
+     - Weight: Convert the weight to an integer.
+     - Height: Convert the height to a float since height is typically represented with decimal values (e.g., 1.79 meters).
+   
+3. Mathematical Operations in Python:
+   - Squaring the Height: 
+     - Use the exponent operator ** to square the height: height_as_float ** 2.
+     - Alternatively, use parentheses to square the height: (height * height).
+
+4. Calculating BMI:
+   - BMI = weight / (height * height)
+   - Print the BMI result as a whole number (integer).
+
+5. Important Notes:
+   - Ensure correct data types for weight and height.
+   - Make sure the BMI result is an integer by rounding if necessary.
+   - Ensure correct order of operations when performing calculations (use parentheses when needed).
+   - Test the program to verify the output.
+
+=====================================================
+======================== Number Manipulation and F Strings in Python
+
+Notes on Number Manipulation in Python
+
+Rounding Numbers:
+- Round Function:
+  - The `round()` function rounds a number to the nearest integer or specified number of decimal places.
+  - Example: `round(8 / 3)` gives `3` (rounds 2.666 to the nearest whole number).
+  - Example for decimals: `round(8 / 3, 2)` gives `2.67` (rounds to 2 decimal places).
+
+Floor Division:
+- Floor Division (`//`):
+  - When dividing numbers, the floor division operator `//` returns an integer by discarding the decimal part.
+  - Example: `8 // 3` gives `2` (integer result).
+  - Example with clean division: `4 // 2` gives `2`.
+
+- Difference between Normal Division `/` and Floor Division `//`:
+  - Normal division: `4 / 2` gives `2.0` (floating point).
+  - Floor division: `4 // 2` gives `2` (integer).
+
+Shorthand Operators:
+- Incrementing and Decrementing Values:
+  - Use `+=` to increase a variable’s value.
+    - Example: `score = 0; score += 1` makes `score` become `1`.
+  - Use `-=` to decrease a variable’s value.
+    - Example: `score -= 1` makes `score` become `0`.
+  
+- Multiplication and Division Shortcuts:
+  - Use `*=`, `/=`, and other shorthand operators to modify values.
+    - Example: `score *= 2` multiplies `score` by 2.
+
+F-Strings:
+- Mixing Strings and Other Data Types:
+  - F-strings simplify combining different data types into a string without converting each type manually.
+  - Example: `f"Your score is {score}, height is {height}, winning: {isWinning}"`
+  - Output: `"Your score is 0, height is 1.8, winning: True"`
+
+=====================================================
+======================== [Interactive Coding Exercise] Life in Weeks
+
+Notes on Program to Calculate Weeks Left in Lifetime
+
+Goal:
+- Create a program that calculates the number of weeks left in someone's life, based on their age.
+- Format the output as: "You have X weeks left." where X is the calculated number of weeks.
+
+Steps:
+
+1. **Input:**
+   - The input is the person's age, which comes in as a string.
+   - We need to convert this string into an integer to perform calculations.
+     - Use the `int()` function to convert the age to an integer.
+     - Example: `age = int(input("Enter your age: "))`
+
+2. **Calculating the Years Left:**
+   - Subtract the person's age from 90 (assuming a lifespan of 90 years).
+   - Formula: `years_left = 90 - age`
+   - Example: If the person is 41 years old, then `years_left = 90 - 41 = 49`.
+
+3. **Convert Years Left to Weeks:**
+   - There are 52 weeks in a year, so multiply the number of years left by 52 to get the total number of weeks.
+   - Formula: `weeks_left = years_left * 52`
+   - Example: If someone has 49 years left, then `weeks_left = 49 * 52 = 2,548 weeks`.
+
+4. **Output:**
+   - Use an f-string to output the result in the required format.
+   - Example: `print(f"You have {weeks_left} weeks left.")`
+   - This will display the message: "You have 2,548 weeks left."
+
+Example Code:
+   age = int(input("Enter your age: ")) 
+    Input as string, convert to int years_left = 90 - age
+    Calculate years left weeks_left = years_left * 52
+    Convert years to weeks print(f"You have {weeks_left} weeks left.") # Output the result
+
+
+Key Concepts:
+- Converting data types (`int()` to convert age string to integer).
+- Arithmetic operations (subtraction for years, multiplication for weeks).
+- Using f-strings to format output in Python.
+
+=====================================================
+======================== Day 2 Project Tip Calculator
+
+Tip Calculator Project Notes
+
+1. Overview of the Tip Calculator
+   - The program will calculate the total amount each person should pay after adding a tip to a bill and dividing it among a group.
+   - Inputs:
+     - Total bill amount (float or int)
+     - Tip percentage (int)
+     - Number of people (int)
+   - Outputs:
+     - Each person’s share (rounded to 2 decimal places)
+
+2. Program Breakdown
+   - Step 1: Display a welcome message.
+     print("Welcome to the tip calculator!")
+   - Step 2: Ask for the total bill.
+     bill = float(input("What was the total bill? $"))
+   - Step 3: Ask for the tip percentage.
+     tip = int(input("How much tip would you like to give? 10, 12, or 15? "))
+   - Step 4: Ask for the number of people to split the bill.
+     people = int(input("How many people to split the bill? "))
+
+3. Tip Calculation
+   - Formula for calculating the tip:
+     tip_amount = bill * (tip / 100)
+   - Add the tip to the original bill:
+     bill_with_tip = bill + tip_amount
+   - An alternative shorthand:
+     bill_with_tip = bill * (1 + tip / 100)
+
+4. Dividing the Bill
+   - After the tip is added, divide the total by the number of people:
+     bill_per_person = bill_with_tip / people
+
+5. Rounding the Amount
+   - Round the amount to 2 decimal places:
+     final_amount = round(bill_per_person, 2)
+
+6. Output the Final Result
+   - Display the final amount each person has to pay.
+     print(f"Each person should pay: ${final_amount}")
+
+7. Sample Flow
+   - "Welcome to the tip calculator!"
+   - Input prompts:
+     - "What was the total bill?"
+     - "How much tip would you like to give?"
+     - "How many people to split the bill?"
+   - Final output:
+     - "Each person should pay: $XX.XX"
+
+8. Example Calculation
+   - Bill: $100
+   - Tip: 15%
+   - People: 5
+   - Total bill with tip: $100 * (1 + 0.15) = 115
+   - Bill per person: $115 / 5 = 23.00
+
+9. Python Specifics
+   - Data Types:
+     - input() returns a string, so convert to float() or int().
+     - Use round() to limit decimals in the final result.
+   - Formatting:
+     - Use F-strings for easy embedding of variables in strings:
+       print(f"Each person should pay: ${final_amount}")
+
+10. Final Code Example
+    print("Welcome to the tip calculator!")
+
+    bill = float(input("What was the total bill? $"))
+    tip = int(input("How much tip would you like to give? 10, 12, or 15? "))
+    people = int(input("How many people to split the bill? "))
+
+    bill_with_tip = bill * (1 + tip / 100)
+    bill_per_person = bill_with_tip / people
+
+    final_amount = round(bill_per_person, 2)
+
+    print(f"Each person should pay: ${final_amount}")

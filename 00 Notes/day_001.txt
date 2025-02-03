@@ -1,0 +1,736 @@
+=====================================================
+========================What you're going to get from this course
+
+Instructor: Angela (Senior Developer, App Brewery)
+
+- Python Bootcamp Notes -
+
+Instructor: Angela, Senior Developer at App Brewery
+
+- Course includes 56+ hours of HD video, tutorials, coding exercises, and quizzes.
+- Based on #100DaysOfCode challenge.
+- Covers Python from beginner to advanced levels: Web Development, Data Science, Automation, and more.
+- Daily hands-on projects: 
+  - Weather bot ☔
+  - Arcade games (Snake, Pong) 👾
+  - Data visualization 📊
+  - Automated birthday emails 🎂
+  - Startup clones (Cheap flight club, Blog, Twitter bot) ✅
+- No prior experience needed; designed for all skill levels.
+- Structured to fit into a busy schedule (~2 hours/day).
+- Same curriculum as in-person bootcamp, saving time and money.
+- Perfect for portfolio building and job preparation.
+- Highly rated by 500k+ students ⭐⭐⭐⭐⭐.
+
+Master Python 🐍 and start coding!
+
+=====================================================
+======================== Downloadable Resources and Tips for Taking the Course
+
+Python Bootcamp - Course Introduction
+
+- This course is more than just learning; it’s a challenge and a journey.
+- Many say, *"I want to learn to code"*, but action is what makes the difference.
+- You’ve already taken the first step by enrolling. Success comes to those who show up!
+
+### 100 Days of Code Challenge
+- The best way to learn to code is consistent practice.
+- Commit to coding for at least 1 hour per day for 100 days.
+- This builds coding skills like training a muscle.
+
+### How the Course is Designed
+- Each day, you will learn a new concept and apply it to a project.
+- By the end, you’ll master professional Python skills and be job-ready.
+
+### Rules for Success
+1. Pledge to Code
+   - Sign a personal pledge to stay committed.
+   - Print and place it where you can see it daily.
+
+2. Log Your Progress
+   - Use #100DaysOfCode on Twitter to stay accountable.
+   - Engage with others in the community for motivation.
+
+Let's get started and make this journey a success! 🚀
+
+=====================================================
+======================== Day 1 Goals what we will make by the end of the day
+
+### Day 1: Introduction to Python Basics
+
+- Printing & Commenting
+  - Use `print()` to display output.
+  - Comments start with `#` to explain code.
+
+- Debugging
+  - Identify and fix syntax & name errors.
+  - Common issues: typos, incorrect indentation.
+
+- String Manipulation & Variables
+  - Use `input()` to take user input.
+  - Store values in variables.
+  - Concatenate strings using `+`.
+
+- Final Project: Band Name Generator
+  - Ask user for city and pet name.
+  - Combine them to create a band name.
+  - Example: Bristol + Rabbit → "Bristol Rabbit"
+
+- Try it first before coding
+  - Use provided URL to preview.
+  - Run the code and test the output.
+
+- Next Steps
+  - Once tested, move to the next lesson.
+
+=====================================================
+======================== Printing to the Console in Python
+
+Replit Setup and First Python Program
+
+1. Accessing the Course Link:
+   - Go to the URL provided in the course resources.
+   - Instead of typing manually, click the provided link to avoid typos.
+
+2. Forking the Repl:
+   - After clicking the link, you'll land on a starting Replit.
+   - Click on the "Fork" button to create your own version of the Repl.
+   - Forking allows you to work on the code while making edits to your own version.
+   - If you don't have a Replit account, sign up for free (no credit card needed).
+
+3. Creating a Replit Account:
+   - After signing up, you'll be directed back to the page where you can fork the Repl.
+   - Forking creates a personal copy of the project in your Replit account.
+   - You can now access your work later through "My Repls."
+
+4. Navigating Replit Interface:
+   - On the left-hand side, you’ll see a list of files.
+     - The current file is a Python file.
+     - You can add new files and folders for organizing your code later.
+   - The "Settings" tab allows customization.
+     - Increase the font size for better readability.
+     - Keep the settings simple for now, and collapse the pane for more space.
+
+5. Coding Area:
+   - The main space on the right is where you’ll write your code.
+   - After writing code, hit "Run" to execute it and see results in the output area.
+
+6. Changing Themes:
+   - A darker theme may be easier on your eyes, especially when coding at night.
+
+7. Writing Your First Line of Code:
+   - The goal is to tell the computer to do something simple: Print "Hello world!"
+   - Use the `print()` function in Python:
+     - Type: `print("Hello world!")`
+   - This prints "Hello world!" inside the console (output area).
+
+8. Code Explanation:
+   - `print()` is a function that displays information to the screen.
+   - The content inside the parentheses is a string, i.e., text to be displayed.
+   - Strings are enclosed in double quotes (or single quotes).
+     - Example: `"Hello world!"` is a string.
+
+9. Common Errors and Debugging:
+   - Forgetting a closing quote or parentheses will cause an error.
+   - When an error occurs, you may see a hint (e.g., orange color in the code).
+   - Look for syntax errors: missing quotes, parentheses, or typos.
+   - If you get an error message, search it online (e.g., StackOverflow) for solutions.
+
+10. Fixing Errors:
+    - If you forget a quote, the code editor highlights the issue.
+    - Use the error message to guide you in finding and fixing the problem.
+    - Example: Missing a closing quote → Fix by adding the closing quote.
+
+11. Debugging Tips:
+    - Pay attention to syntax highlighting and error messages.
+    - Error messages often point to the problem's location in the code (indicated with a caret or arrow).
+
+12. Next Steps:
+    - Once the code runs successfully, proceed to the next lesson.
+    - Sign up for the classroom to access coding challenges.
+    - Practice solving problems to build confidence and skill.
+
+=====================================================
+======================== How to Enrol for Free on Auditorium
+
+- Sign-Up Process:
+    - Go to auditorium.ai.
+    - Click on SIGN UP.
+    - Enter name, email, and create a password.
+    - Verify your email after signing up.
+    - Log in with your credentials after verifying.
+
+- Course Enrollment:
+    - After logging in, go to your Udemy course.
+    - Click the Enrollment Code button in the Course Resources.
+    - Use the link to enroll in the 100 Days of Code - Python Exercises course.
+    - The course contains 36 lessons with exercises, not all of which are day-based.
+
+- Interface Overview:
+    - Input Area: Where you write your code.
+    - Output Area: Displays the results when you run your code.
+    - Submit Button: To test your code against predefined tests.
+    - Once an exercise is completed and tested, a checkmark appears next to the lesson.
+    - If a lesson is not viewed, it stays blank.
+
+- Audio & Slide Decks:
+    - Audio descriptions are provided for each exercise (hit Play to hear it).
+    - The slide deck contains instructions and concepts.
+    - You can pause and change speed for audio playback.
+    - Use the settings icon to adjust speed (e.g., 2x or 1.5x speed).
+    - Mute audio using the mute button 🔉 or adjust volume.
+
+- Exercise Submissions:
+    - Each exercise comes with a SUBMIT button.
+    - Instructions guide you through what needs to be done.
+    - The platform runs automated tests when you hit Submit.
+    - The Test Cases ensure the solution works for various inputs, not just the example ones.
+
+- Test Results & Feedback:
+    - After submitting, you get a result indicating if your code passed all tests.
+    - If you don’t pass, you’ll see failed test cases and hints.
+    - Your code should dynamically handle different inputs, not hardcoded solutions.
+    - Once your code passes all tests, it’s marked completed with a green check.
+
+- Slide Navigation & Skipping:
+    - Navigate through slides using the Next button.
+    - Skip to the next slide by clicking the double arrow ≫.
+    - Final solutions are presented in the last slide of each exercise.
+
+- Solution Review:
+    - Each exercise has a solution you can review.
+    - The solution is read-only, but you can copy and paste it for reference.
+
+- Reporting Bugs/Feedback:
+    - If you face any issues, use the feedback button to report problems.
+    - This helps the Auditorium team improve the platform.
+
+- Reminder:
+    - Completing these exercises is important for testing your code.
+    - While they do not affect your Udemy certificate, they are crucial for your learning.
+    - Work through each exercise to verify if your code works correctly.
+
+=====================================================
+======================== [Interactive Coding Exercise] Printing
+
+Lesson Notes - Python Print Statement
+
+Objective:
+- Practice using the print() statement in Python to print text to the Output area.
+- Modify the code to print five lines of text, one per line.
+
+Syntax of the print() Statement:
+- Basic Format:
+  print("text")
+  - print: Tells the computer that we want to print something.
+  - "text": The text you want to display. This is placed inside double quotes.
+  
+- Important: Everything inside the double quotes is treated as text, even though it looks like code.
+
+Print Multiple Lines:
+- To print multiple lines, we need multiple print() statements.
+  Example:
+    print("First line")
+    print("Second line")
+    print("Third line")
+    print("Fourth line")
+    print("Fifth line")
+
+Important Tips for Output:
+- Exact Match: The output must match exactly—pay attention to spaces, punctuation, and case.
+- No Extra Spaces or Symbols: Extra spaces can cause errors. Be very careful when copying or typing the text.
+
+Handling Quotes Inside Text:
+- Problem: If you want to print text that contains quotes, Python gets confused if the text starts and ends with the same kind of quote.
+  Example: print("She said, "Hello!"") will cause an error.
+
+- Solution 1: Alternating Quotes
+  - Use single quotes (' ') to define the text and double quotes (" ") inside.
+  Example:
+    print('She said, "Hello!"')
+
+- Solution 2: Escape Character (\)
+  - Use a backslash (\) before the quote inside the text to "escape" it and prevent Python from confusing it with the string delimiter.
+  Example:
+    print("She said, \"Hello!\"")
+
+Practice Modifying Code:
+- Use the knowledge you've learned to modify the code and experiment with different print() statements to see how they behave.
+
+=====================================================
+======================== String Manipulation and Code Intelligence
+
+Lesson Notes - Working with Strings in Python
+
+Objective:
+- Learn how to create new lines in strings and concatenate strings.
+- Understand how to avoid indentation errors and use text editor features for debugging.
+
+1. Printing Multiple Lines Using a Single Print Statement:
+   - Previously, to print things on different lines, we had to use multiple `print()` statements.
+   - Now, we can print multiple lines using just a single `print()` method by using the `\n` character to create a new line.
+
+   Example:
+   print("Hello\nWorld")
+   - The `\n` character causes a new line to be created.
+   - Shortcut for running code:
+     - On Mac: `Command + Enter`
+     - On Windows: `Control + Enter`
+
+   - Important Tip: Use a backslash `\` (not a forward slash) for the newline character. Pay attention to syntax highlighting.
+
+2. Concatenating Strings:
+   - String concatenation means combining different strings into a single string.
+   - Use the `+` operator to join two strings together.
+
+   Example:
+   print("Hello" + "Angela")
+   - Result: "HelloAngela" (No space between them).
+
+   - To add a space between the strings, you can do the following:
+     print("Hello" + " " + "Angela")
+     - This adds a space between "Hello" and "Angela".
+
+3. Understanding Indentation Errors:
+   - Indentation is critical in Python. It indicates the structure of your code.
+   - If you accidentally add spaces or tabs before a line, it can cause an indentation error.
+   - Example:
+     print("Hello")
+     - Make sure there are no unintended spaces before the `print()` statement.
+
+   - Indentation error message: "unexpected indent" is shown when there is extra space or tab in the code.
+
+4. Code Editors and Debugging:
+   - Text editors help you avoid errors by highlighting issues and suggesting fixes.
+   - Code Intelligence is a feature in many text editors that helps with autocomplete and error detection.
+   - Example:
+     - If you forget to add double quotes around a string, the editor will show a red squiggly line.
+     - You can hover over the squiggly line to see what the error is.
+
+5. Common Errors in Code:
+   - Syntax errors happen when there is a mistake in the structure of your code (e.g., missing quotes or parentheses).
+   - Indentation errors occur when there's unexpected space or tabs before a line of code.
+   - Debugging: If you encounter an error, check for missing characters, spaces, or typos.
+
+6. Debugging Exercise:
+   - Debugging is the process of finding and fixing errors in your code.
+   - Common errors include syntax errors and indentation errors.
+   - Text editors with code intelligence can help you quickly spot and fix these errors before running your code.
+
+=====================================================
+======================== [Interactive Coding Exercise] Debugging Practice
+
+Lesson Notes - Debugging Print Statements in Python
+
+Objective:
+- Learn how to debug print statements in Python.
+- Understand common syntax and indentation errors.
+
+Steps for Debugging:
+
+1. First Print Statement - Missing Quote:
+   - The first issue is a missing double quote before the word "Day."
+   - When we use double quotes in Python, it tells the computer which part of the line is the text we want printed.
+   - If the quotes are not matched properly, the program won't know which part to print.
+   - Fix: Add a double quote before "Day" to properly close the string.
+
+   Example (Incorrect):
+   print(Hello Day)
+
+   Example (Fixed):
+   print("Hello Day")
+
+2. Second Print Statement - Issue with Double Quotes:
+   - The second issue occurs when there is only one set of double quotes around the string.
+   - When the program encounters double quotes, it assumes everything between the first and second quote is text to be printed.
+   - In this case, the issue is complicated by the `+` symbol in the string.
+   - Fix: Alternate the type of quotes used. Change the outer quotes from double to single quotes.
+
+   Example (Incorrect):
+   print("This is a " + "String")
+
+   Example (Fixed):
+   print('This is a "String"')
+
+3. Third Print Statement - Extra Indentation:
+   - Python is very sensitive to indentation. It uses indentation to understand the structure of the code.
+   - If there's extra indentation at the beginning of a line, Python will treat it as part of a different code block.
+   - Fix: Remove the extra indentation and ensure that the print statement starts at the beginning of the line.
+
+   Example (Incorrect):
+      print("Hello World")
+
+   Example (Fixed):
+   print("Hello World")
+
+4. Fourth Print Statement - Extra Parenthesis:
+   - An extra opening parenthesis is causing an issue in the print statement.
+   - Python print statements follow this format: `print("text")`. There should only be one opening and one closing parenthesis.
+   - Fix: Remove the extra opening parenthesis.
+
+   Example (Incorrect):
+   print(("Hello"))
+
+   Example (Fixed):
+   print("Hello")
+
+5. General Debugging Tips:
+   - Always ensure that quotes are properly matched (either single or double quotes).
+   - Pay attention to indentation—Python treats extra spaces or tabs as separate code blocks.
+   - Avoid extra parentheses or unnecessary characters in the print statement.
+   - Debugging is part of the learning process, so take your time to understand what each error means and how to fix it.
+
+6. Next Steps:
+   - Once you've fixed the errors and the output matches the expected result, you can submit the code.
+   - If you get stuck or want more help, remember you can always go through the solution or ask for assistance.
+
+Remember: Debugging is a skill that gets better with practice. Keep working on identifying and fixing issues in your code.
+
+=====================================================
+======================== The Python Input Function
+
+# Notes from the lesson on the `input` function in Python
+
+1. Introduction to the `input` function:
+   - We use the `input` function to get data from the user.
+   - It pauses the program and waits for the user to provide an input.
+   - Once the user hits enter, the input data is returned to the program for further use.
+
+2. Syntax of `input`:
+   - `input(prompt)` where:
+     - `prompt` is a string that will be displayed to the user, asking for input.
+     - The program will display this message and wait for the user to type something in.
+   
+3. How the `input` function works:
+   - The program will stop and show the prompt message.
+   - The user types their response and hits enter.
+   - The program continues once the user provides their input.
+
+4. Example of input usage:
+   - `input("What is your name? ")` asks the user for their name.
+   - The user's input is saved in the variable `name`.
+   - `print("Hello " + name)` prints out a greeting with the user's name.
+
+5. Program flow:
+   - After calling the `input` function, the program execution halts until the user enters their response.
+   - The input is stored and can be used in subsequent code.
+
+6. Nested functions:
+   - You can use the `input` function inside a `print` function to immediately use the data entered by the user.
+   - Example:
+     ```python
+     print("Hello " + input("What is your name? "))
+     ```
+
+7. Debugging and Visualization with Thonny:
+   - Thonny is a useful Python IDE that helps you visualize code execution step by step.
+   - It allows you to step through code, making it easier to understand how input is handled and how code execution progresses.
+
+8. Using Comments:
+   - You can comment lines in Python by adding a hashtag (`#`) in front of the text.
+   - Comments are ignored by the computer but are helpful for understanding code.
+   - To add comments:
+     ```python
+     # This is a comment
+     ```
+
+9. Commenting Keyboard Shortcuts:
+   - On Mac, use `command + /` to comment out a line.
+   - On Windows, use `control + /` to comment out a line.
+   - To undo changes, use `command + z` (Mac) or `control + z` (Windows).
+
+10. Best practices:
+   - Write comments above new concepts or complex lines of code to help understand them later.
+   - This makes your code easier to comprehend and remember.
+
+11. Recap:
+   - In this lesson, we learned how to use the `input` function to take user input.
+   - We also learned about nested functions, using comments, and debugging with Thonny.
+
+
+=====================================================
+======================== [Interactive Coding Exercise] Input Function
+
+Input() Function in Auditorium
+- Input in Auditorium works differently compared to other environments.
+- Input pane appears at the bottom left for exercises requiring input.
+- You can replace the example input with your own values.
+- Input helps us test your code and make sure it's working properly.
+
+How It Works
+- input() function is used to get input from the Input pane.
+- After running the code, it picks up inputs line by line.
+- For example:
+  print(input())
+  This will pull in the first line from the Input pane and print it.
+
+Handling Missing Inputs
+- If there are more input requests than available lines in the Input pane, you will get an error.
+- Example: If you have 4 input() calls but only 3 lines of input, an error will occur.
+- The error happens because it’s looking for more inputs than what exists in the pane.
+
+Avoiding Prompts in Input()
+- When using input() in Auditorium, avoid adding a prompt (like "What is your name?" inside input()).
+- Use just input() so it pulls from the Input pane without showing extra text in the output.
+
+Demo Exercise
+- You are asked to use two inputs from the Input pane (e.g., 2 and 3) to perform a multiplication.
+- Your code should handle this input dynamically, so it works for all inputs, not just hardcoded values like 2 * 3.
+- Hidden tests check edge cases, so you must make your code flexible.
+
+Test Case Example
+- The code passes when multiplying 2 * 3, but fails for another test case with inputs 5 and 5 because it prints a fixed output (6).
+- You need to adjust your code to handle dynamic inputs.
+
+Using len() Function
+- To calculate the length of a string, use len().
+  Example:
+  len("Hello")  # Output will be 5
+- In this case, after taking input from the user, use len() to get the number of characters in the input.
+
+Final Exercise Steps
+1. Use input() to get the name from the Input pane.
+2. Apply the len() function to the input to calculate the number of letters.
+3. Print the length of the name.
+
+=====================================================
+======================== Python Variables
+
+Python Variables - Notes
+
+- Introduction to Variables
+  - Variables are incredibly useful in programming.
+  - They allow us to store data and refer to it later.
+
+- Forking the Starting Code
+  - Go to the course resources and fork the Day 1 variables start Repl.it sandbox.
+  - This will be the environment where you can work on your own version of the code.
+
+- What Happens Without Variables
+  - We are familiar with using `input()` to take user input.
+  - The input is received but disappears immediately after it is entered.
+  - There's no way to refer to this input again unless we store it.
+
+- What Variables Do
+  - Variables let you store data for later use.
+  - Example:
+    ```python
+    name = input("Enter your name: ")
+    ```
+  - Now, instead of the input disappearing, it's stored in the `name` variable.
+
+- Accessing Data Stored in Variables
+  - After storing the input in a variable, you can print or use it later.
+  - Example:
+    ```python
+    print(name)
+    ```
+  - The value of the variable `name` will be printed, even after the input has been taken.
+
+- Understanding Variables with an Analogy
+  - Think of a phone book: You jot down numbers but also associate them with names to know who they belong to.
+  - In programming, a variable is like that "name" in the phone book, making it easier to refer to data.
+
+- Changing Variables
+  - Variables can be changed throughout the program.
+  - Example:
+    ```python
+    name = "Jack"
+    print(name)  # Prints Jack
+    name = "Angela"
+    print(name)  # Prints Angela
+    ```
+  - The variable `name` can hold different values at different points in the program.
+
+- Using Variables to Simplify Code
+  - Instead of writing long lines of code, variables can store intermediate values.
+  - Example:
+    ```python
+    name = input("Enter your name: ")
+    length = len(name)
+    print(length)
+    ```
+  - This makes your code more readable and easier to manage.
+
+- Final Example
+  - If we take input for a name and calculate its length:
+    ```python
+    name = input("Enter your name: ")
+    length = len(name)
+    print(length)
+    ```
+  - This approach stores the user input in the `name` variable and the length of the name in the `length` variable.
+  - The result is printed after performing the calculations.
+
+- Code Challenge
+  - The lesson ends with a challenge for you to apply what you've learned about variables.
+
+=====================================================
+======================== [Interactive Coding Exercise] Variables
+
+Exercise - Switching Values in Two Variables
+
+- Goal:
+  - The task is to switch the values stored in two variables, `a` and `b`.
+  - After inputting values into `a` and `b`, the output should show `a` equal to the value originally in `b`, and `b` equal to the value originally in `a`.
+
+- Steps to Approach:
+  1. Initial Setup:
+     - Values are inputted into two variables, `a` and `b`.
+     - Example: 
+       - `a = 29` 
+       - `b = 41`
+  
+  2. Objective:
+     - We need to swap the values so that:
+       - `a` becomes the value of `b` (41).
+       - `b` becomes the value of `a` (29).
+  
+  3. Think About Variables:
+     - Variables hold data temporarily.
+     - To swap values, we need to store one value temporarily before switching them.
+
+- Solution (3 lines of code):
+  1. Create a Temporary Variable:
+     - Create a third variable, `c`, to temporarily store one of the values.
+     - Example:
+       ```python
+       c = a  # Now c = 29
+       ```
+
+  2. Assign Value of `b` to `a`:
+     - Assign the value of `b` to `a`:
+       ```python
+       a = b  # Now a = 41
+       ```
+
+  3. Assign Value of `c` to `b`:
+     - Assign the value of `c` (the original value of `a`) to `b`:
+       ```python
+       b = c  # Now b = 29
+       ```
+
+- Explanation:
+  - `c` temporarily holds the value of `a`.
+  - Then, the value of `b` is transferred to `a`.
+  - Finally, the value in `c` (which holds the original value of `a`) is transferred to `b`.
+  - This results in `a` having the value that was in `b`, and `b` having the value that was in `a`.
+
+- Final Output:
+  - After executing the above steps, the print statements will show:
+    - `a = 41` (which was originally in `b`).
+    - `b = 29` (which was originally in `a`).
+
+- Concept to Remember:
+  - Temporary Variables: These are crucial when you need to hold a value while performing a swap.
+  - Variables are like boxes that store data, and we can temporarily move data around to achieve results like switching values.
+
+=====================================================
+======================== Variable Naming
+
+Lesson - Naming Variables
+
+- Naming Variables:
+  - You can name your variables however you want, as long as you're consistent throughout your code.
+  - Example:
+    - `name`, `n`, or `l` are all possible, but consistency is key to avoid confusion.
+
+- Make Your Code Readable:
+  - The most important rule is to make your code readable to yourself and others.
+  - Avoid using vague or short names like `n` or `l` for long periods. In 6-12 months, those names won’t mean much.
+  - Use descriptive names that make sense based on what the variable is storing.
+
+- Multiple Words in Variable Names:
+  - You can have multiple words in a variable name.
+  - Example: `username` instead of just `name`.
+  - To separate words, use an underscore: `user_name`.
+  - Spaces are not allowed in variable names. For example, `user name` will give a syntax error.
+
+- Using Numbers in Variable Names:
+  - You can use numbers in your variable names, e.g., `length1`, `length2`.
+  - Rule: The number cannot be at the beginning of the variable name.
+    - Invalid: `1length` or `3length` (will give a syntax error).
+  
+- Reserved Keywords (Privileged Words):
+  - Some words are reserved in Python, like function names (`print`, `input`).
+  - Don’t use these reserved words as variable names. It will cause confusion and could mess up syntax highlighting in your code editor.
+  - Example: Using `input` as a variable name makes it look like you're trying to redefine the `input()` function.
+
+- Spelling Consistency:
+  - Be careful with spelling: If you name a variable `name`, it must always be referenced as `name`.
+  - If you accidentally misspell it (e.g., `nama` instead of `name`), it will lead to a NameError.
+  - Python doesn't check spelling automatically. The error occurs because Python cannot find a variable `nama` that was defined as `name`.
+  
+- What to Do If You Get a NameError:
+  - When you get a NameError, it means a variable name is being used incorrectly or spelled wrongly.
+  - Check the line mentioned in the error message, correct the typo, and your code will work.
+
+- Conclusion:
+  - Be descriptive, use consistent naming, and avoid using reserved words.
+  - Always ensure correct spelling throughout your code to avoid errors.
+
+=====================================================
+======================== Day 1 Project Band Name Generator
+
+Lesson - Final Project: Band Name Generator
+
+Objective:
+- Build a program that generates a band name by asking the user for the city they grew up in and the name of their pet.
+- Combine these inputs to create a band name.
+
+Steps to Build the Band Name Generator:
+
+1. Create a greeting for the program:
+   - Print a welcoming message to introduce the program.
+     ```python
+     print("Welcome to the band name generator.")
+     ```
+
+2. Ask the user for the city they grew up in:
+   - Use the `input()` function to ask the user for input.
+     ```python
+     city = input("Which city did you grow up in?\n")
+     ```
+   - The `\n` is used to create a new line after the prompt.
+
+3. Ask the user for the name of their pet:
+   - Use the `input()` function again for the pet's name.
+     ```python
+     pet = input("What is the name of a pet?\n")
+     ```
+
+4. Combine the city and pet name:
+   - Concatenate the `city` and `pet` variables to generate the band name.
+     ```python
+     print("Your band name could be " + city + " " + pet)
+     ```
+   - This combines the city and pet name, separated by a space.
+
+5. Ensure input is displayed on a new line:
+   - The `\n` inside the `input()` function ensures that the input cursor is on a new line.
+   - Modify both `input()` calls to add a newline character.
+
+6. Full Program Example:
+   ```python
+   print("Welcome to the band name generator.")
+   city = input("Which city did you grow up in?\n")
+   pet = input("What is the name of a pet?\n")
+   print("Your band name could be " + city + " " + pet)
+
+-> Key Concepts:
+    - String Concatenation: Combining strings using +.
+    - Using input() to get user input.
+    - \n to create a new line in the input prompt for better readability.
+    - Storing user input in variables (city, pet) for later use.
+
+=====================================================
+======================== Congratulations! Well done!
+
+Conclusion - Day 1 Recap
+
+- Congratulations on completing your first day of learning!
+- The journey of learning Python (or any new skill) begins with that first step, and you've taken it!
+- It's okay if the first few days take longer than an hour. There’s a lot to absorb, and it’s perfectly fine to take breaks when needed.
+- You don't have to follow the lessons strictly day-by-day. Feel free to go at your own pace.
+- It’s important to stay refreshed and return the next day with the same enthusiasm to tackle new topics.
+- Rest, recharge, and come back ready to continue learning!
