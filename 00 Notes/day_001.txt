@@ -1,3 +1,81 @@
+
+
+=====================================================
+======================== Important Links
+
+003 Join-the-Student-Community-on-Discord
+https://discord.gg/3DDPkCAU3N
+
+003 Study-With-Me-Video
+https://www.udemy.com/course/100-days-of-code/learn/lecture/23518346#search
+
+003 FAQ-I-Cant-Open-the-Course-Resource-Links
+https://www.udemy.com/course/100-days-of-code/learn/lecture/23544648#questions/13314700
+
+004 Press-Run-to-see-the-final-project
+https://appbrewery.github.io/python-day1-demo/
+
+006 Fork-the-Day-1-Starting-Repl
+https://repl.it/@appbrewery/day-1-printing-start
+
+006 Create-a-Replit-Account
+https://replit.com/signup
+
+007 Join-Auditorium
+https://app.auditorium.ai/register
+
+007 Enrolment-Code
+https://app.auditorium.ai/courses?enrollment_code=CP3Y9A6U
+
+008 Link-to-Coding-Exercise-1
+https://app.auditorium.ai/lesson/eelyNMYJKXeNJAbjssSEQz0m88XvnhX6/49be1e94-c2d3-4683-ae14-36bbef39fc84
+
+008 How-to-join-Auditorium
+https://www.udemy.com/course/100-days-of-code/learn/lecture/40109984
+
+009 Fork-the-Day-1-Starting-Repl
+https://replit.com/@appbrewery/day-1-printing-start
+
+010 Exercise-2
+https://app.auditorium.ai/lesson/eelyNMYJKXeNJAbjssSEQz0m88XvnhX6/d43d1d37-164f-4a24-8e5a-3cc03722437f
+
+010 How-to-join-Auditorium
+https://www.udemy.com/course/100-days-of-code/learn/lecture/40109984
+
+012 Exercise-3
+https://app.auditorium.ai/lesson/eelyNMYJKXeNJAbjssSEQz0m88XvnhX6/d83e1847-3ad1-4f67-9f9f-7cbfb9dd970f
+
+012 How-to-join-Auditorium
+https://www.udemy.com/course/100-days-of-code/learn/lecture/40109984
+
+013 Variables-Starting-Repl
+https://repl.it/@appbrewery/day-1-variables-start
+
+013 Variables-Ending-Repl
+https://repl.it/@appbrewery/day-1-variables-end
+
+014 Exercise-4
+https://app.auditorium.ai/lesson/eelyNMYJKXeNJAbjssSEQz0m88XvnhX6/8a8d2e46-c56a-435b-98f3-bcd71216dd26
+
+014 How-to-join-Auditorium
+https://www.udemy.com/course/100-days-of-code/learn/lecture/40109984
+
+015 Day-1-Ending-Code
+https://repl.it/@appbrewery/day-1-printing-end
+
+017 Solution-Band-Name-Generator-Ending-Code
+https://repl.it/@appbrewery/band-name-generator-end
+
+017 Course-Fixes-Report-an-Issue
+https://docs.google.com/forms/d/e/1FAIpQLSdwbmx2whgRNiciYXiSs2lJT6-dOYgvqGnXdVqfLv1fjln7kw/viewform?usp=send_form
+
+017 Band-Name-Generator-Starting-Code-replit.com-
+https://replit.com/@appbrewery/band-name-generator-start?v=1
+
+017 Final-project-demo-click-Run-to-try-it
+https://appbrewery.github.io/python-day1-demo/
+
+
 =====================================================
 ========================What you're going to get from this course
 
