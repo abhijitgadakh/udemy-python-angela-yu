@@ -298,9 +298,9 @@ Mathematical Operations in Python:
    - Result is always a float, even if the division is exact.
    - Example: `6 / 3` gives `2.0`.
 
-5. Exponentiation ()
+5. Exponentiation (**)
    - Use `` for exponents (raising a number to a power).
-   - Example: `2  3` gives `8`.
+   - Example: `2 ** 3` gives `8`.
 
    - Python’s built-in exponentiation is highly appreciated by data scientists and mathematicians.
 
