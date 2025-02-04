@@ -1,0 +1,734 @@
+=====================================================
+======================== Day 3 Goals what we will make by the end of the day
+
+ Conditional Statements
+- Used to make decisions in code.
+- Executes different blocks of code based on conditions.
+- Types:
+  - `if` statement: Runs a block if the condition is `true`.
+  - `if-else` statement: Runs one block if the condition is `true`, another if `false`.
+  - `if-elif-else` statement: Checks multiple conditions in sequence.
+
+ Logical Operators
+- `and`: Both conditions must be `true`.
+- `or`: At least one condition must be `true`.
+- `not`: Reverses the condition.
+
+ Code Blocks & Scope
+- Indentation: Defines code blocks in Python.
+- Scope:
+  - Local Scope: Variables inside a function.
+  - Global Scope: Variables outside functions.
+  - Variables defined inside a block are only accessible within that block.
+
+ Building a Choose Your Own Adventure Game
+- The game follows a sequence of decisions.
+- Uses `if`, `elif`, and `else` to determine different outcomes.
+- Example:
+  1. Start at a crossroad: Choose left or right.
+  2. If left, reach a lake: Choose wait or swim.
+  3. If wait, reach an island: Choose between red, yellow, or blue doors.
+  4. Each choice leads to a different outcome (win or game over).
+
+ Game Flow Example:
+- Start: "You're at a crossroad, where do you want to go? Left or Right?"
+- Left → "You come to a lake. Type 'wait' for a boat or 'swim' to swim across."
+- Wait → "You reach an island safely. There are 3 doors: Red, Yellow, Blue."
+- Choose Red → "You entered a room full of fire. Game Over."
+- Choose Yellow → "You found the treasure! You Win!"
+- Choose Blue → "You entered a room full of beasts. Game Over."
+
+ Next Steps
+- Practice writing conditional statements.
+- Implement logic using `if-elif-else`.
+- Try playing the game at treasure-island-end.appbrewery.repl.run.
+- Prepare to build your own adventure game in the next lesson!
+
+=====================================================
+======================== Control Flow with if  else and Conditional Operators
+
+ Notes: If/Else Statements and Comparison Operators in Python
+
+ Real-Life Example:
+ - A bathtub has an overflow mechanism to prevent water from overflowing.
+ - When the water level exceeds a certain point, it overflows, preventing a spill.
+
+ Concept:
+ - This mechanism can be represented using if/else statements.
+ - If the water level exceeds 80 cm, the water drains.
+ - If the water level is below 80 cm, the tub continues filling.
+
+ If/Else Statements:
+ - If a condition is true, the code inside the 'if' block is executed.
+ - If the condition is false, the code inside the 'else' block is executed.
+ - Syntax:
+if condition:   Check condition
+     Execute this block if the condition is true
+else:
+     Execute this block if the condition is false
+
+ Example Scenario: Theme Park Ticket System
+ - In a theme park, a person must be over 120 cm to ride a rollercoaster.
+
+ Sample Python Code:
+
+ Get user height input
+height = int(input("Enter your height in cm: "))
+
+ Check if the height is greater than 120 cm
+if height > 120:  
+    print("You can ride the rollercoaster!")
+else:  
+    print("Sorry, you have to grow taller before you can ride.")
+
+ Key Points:
+ - The 'if' condition checks if the height is greater than 120.
+ - If true, prints that they can ride.
+ - If false, prints that they cannot ride.
+ - The indentation is critical in Python to indicate the block of code under each condition.
+
+ Comparison Operators:
+ - Greater than (>)
+ - Less than (<)
+ - Greater than or equal to (>=)
+ - Less than or equal to (<=)
+ - Equal to (==)   Important: Two equal signs for comparison
+ - Not equal to (!=)
+
+ Example of "Greater than or equal to" operator:
+if height >= 120:  
+    print("You can ride the rollercoaster!")
+
+ Example of "Equal to" operator:
+if height == 120:  
+    print("You are exactly 120 cm, you can ride!")
+
+ Example of "Not equal to" operator:
+if height != 120:  
+    print("Your height is not 120 cm.")
+
+ Important:
+ - A single equal sign (=) is for assignment, and two equal signs (==) are for comparison.
+ - Incorrect use of comparison operators will result in syntax errors.
+
+
+=====================================================
+======================== [Interactive Coding Exercise] Odd or Even Introducing the Modulo
+
+
+ Notes on If/Else Statements and Modulo Operator in Python
+
+ 1. If/Else Statements:
+ If/else statements allow the program to make decisions based on conditions.
+ Syntax:
+ if condition:
+      code block if condition is True
+ else:
+      code block if condition is False
+
+ Example:
+if condition:   condition is tested here
+    print("This is true")   executed if condition is True
+else:
+    print("This is false")   executed if condition is False
+
+
+ 2. Modulo Operator (%):
+ The modulo operator (%) gives the remainder after division.
+ Syntax: number % divisor
+ If there's no remainder, the result is 0 (even number).
+ If there's a remainder, the result is non-zero (odd number).
+
+ Example of even:
+ If number is divisible by 2 with no remainder:
+ number % 2 == 0 means the number is even.
+even_number = 6
+print(even_number % 2 == 0)   True, because 6 is even.
+
+ Example of odd:
+ If there's a remainder when divided by 2:
+ number % 2 != 0 means the number is odd.
+odd_number = 7
+print(odd_number % 2 != 0)   True, because 7 is odd.
+
+
+ 3. Task: Check if a number is odd or even
+ Steps:
+ - Get the input number.
+ - Convert it to an integer.
+ - Use if/else to check if the number is even or odd.
+
+number = int(input("Enter a number: "))   Step 1: Get user input and convert to int
+
+if number % 2 == 0:   Step 2: Check if the number is even
+    print("This is an even number.")   Even case
+else:   Step 3: If it's not even, it's odd
+    print("This is an odd number.")   Odd case
+
+
+ Notes:
+ - The modulo operator (%) checks the remainder after division.
+ - Even numbers give a remainder of 0 when divided by 2.
+ - Odd numbers give a remainder of 1 when divided by 2.
+ - Syntax is important: the colon (:) after `if` and `else`, and indentation is key.
+
+=====================================================
+======================== Nested if statements and elif statements
+
+ Notes on Nested if/else and elif Statements
+
+ In previous lessons, we learned about basic if/else statements to check conditions.
+ Now, let's add complexity by checking multiple conditions using nested if/else statements and elif.
+
+ 1. Nested if/else Statements:
+ A nested if/else allows you to check for more than one condition inside another if/else.
+ First, the program checks the outer condition (the first if statement).
+ If that condition is true, it checks the inner condition inside the nested if statement.
+ Syntax for a nested if:
+ if condition1:
+     if condition2:
+          code for condition2 being true
+     else:
+          code for condition2 being false
+ else:
+      code for condition1 being false
+
+ Example of Nested if/else:
+height = int(input("Enter your height in cm: "))   Step 1: Get user height
+if height > 120:   First condition: Check height
+    age = int(input("Enter your age: "))   Step 2: Get user age
+    if age <= 18:   Second condition: Check age
+        print("Ticket price: $7")   Age 18 or under pays $7
+    else:
+        print("Ticket price: $12")   Age over 18 pays $12
+else:
+    print("Sorry, you can't buy a ticket.")   If height is not over 120 cm, no ticket
+
+ 2. Using Elif for Multiple Conditions:
+ elif stands for "else if" and allows you to check multiple conditions in a sequence.
+ It's used when you want to check more than one condition and act accordingly.
+ Syntax:
+ if condition1:
+      code for condition1 being true
+ elif condition2:
+      code for condition2 being true
+ else:
+      code if none of the conditions are true
+
+ Example of elif:
+age = int(input("Enter your age: "))   Step 1: Get user age
+if age < 12:   Condition 1: Less than 12 years old
+    print("Ticket price: $5")   Children under 12 pay $5
+elif age <= 18:   Condition 2: Age between 12 and 18
+    print("Ticket price: $7")   Teens pay $7
+else:   Condition 3: Over 18 years old
+    print("Ticket price: $12")   Adults pay $12
+
+ 3. Combining Nested if/else and elif:
+ You can combine both nested if/else statements and elif to handle more complex logic.
+ Example: Check for both height and age to determine ticket price:
+height = int(input("Enter your height in cm: "))   Step 1: Get user height
+if height > 120:   First condition: Check height
+    age = int(input("Enter your age: "))   Step 2: Get user age
+    if age < 12:   Nested condition 1: Age under 12
+        print("Ticket price: $5")   Price for kids
+    elif age <= 18:   Nested condition 2: Age between 12 and 18
+        print("Ticket price: $7")   Price for teens
+    else:   Nested condition 3: Age over 18
+        print("Ticket price: $12")   Price for adults
+else:
+    print("Sorry, you can't buy a ticket.")   If height is not enough, no ticket
+
+ 4. Multiple elif Conditions:
+ You can add as many elif conditions as you need to check for different scenarios.
+ Example: Adding another price tier for people under 22 years old.
+
+age = int(input("Enter your age: "))   Get user age
+if age < 12:
+    print("Ticket price: $5")   Kids under 12
+elif age < 18:
+    print("Ticket price: $7")   Teens between 12 and 18
+elif age < 22:
+    print("Ticket price: $10")   Young adults under 22
+else:
+    print("Ticket price: $12")   Adults over 22
+
+ 5. Summary of Concepts:
+ - Nested if/else: Used to check multiple conditions sequentially, where the second condition is checked only if the first condition is true.
+ - elif: Allows for multiple checks of different conditions in a cleaner and more efficient way than multiple if/else blocks.
+ - You can combine both nested if/else and elif to handle complex logic.
+ - The conditions should always be logically ordered to handle all possible scenarios.
+
+ Practice Exercise:
+ Try implementing your own logic to handle more price tiers or different scenarios for ticket pricing.
+ Experiment with multiple elif blocks to check for more conditions.
+
+
+=====================================================
+======================== [Interactive Coding Exercise] BMI 2.0
+
+ Notes on BMI Calculator 2.0 - Adding Interpretations
+
+ In this exercise, we're upgrading the BMI calculator to not just calculate 
+ the BMI, but also interpret it based on different BMI categories that doctors use.
+
+ 1. Recap of BMI Calculation:
+    - The formula for BMI remains the same: weight / height^2
+    - This gives us a numerical value that we can interpret.
+
+ 2. Why Interpretation Matters:
+    - The BMI number by itself doesn't mean much unless we interpret it.
+    - BMI classifications help understand the person's health status.
+
+ 3. BMI Ranges (These classifications are widely used in health assessments):
+    - Underweight: BMI < 18.5
+    - Normal weight: 18.5 <= BMI < 25
+    - Slightly overweight: 25 <= BMI < 30
+    - Obese: 30 <= BMI < 35
+    - Severely obese: BMI >= 35
+
+ 4. Flow of the Code:
+    - First, we calculate BMI using the formula weight / height^2.
+    - Once we have the BMI value, we classify it using conditional statements (if/else).
+    - The interpretation is printed depending on the BMI range.
+      Example: "Your BMI is X, you are underweight."
+      or "Your BMI is X, you have a normal weight."
+
+ 5. Conditional Statements:
+    - We use "if" and "elif" to check different ranges of BMI.
+    - If BMI < 18.5, print "Your BMI is X, you are underweight."
+    - If BMI is between 18.5 and 25, print "Your BMI is X, you have a normal weight."
+    - If BMI is between 25 and 30, print "Your BMI is X, you are slightly overweight."
+    - If BMI is between 30 and 35, print "Your BMI is X, you are obese."
+    - Else, print "Your BMI is X, you are severely obese."
+
+ 6. Example Code Structure:
+    if BMI < 18.5:
+        print("Your BMI is X, you are underweight.")
+    elif 18.5 <= BMI < 25:
+        print("Your BMI is X, you have a normal weight.")
+    elif 25 <= BMI < 30:
+        print("Your BMI is X, you are slightly overweight.")
+    elif 30 <= BMI < 35:
+        print("Your BMI is X, you are obese.")
+    else:
+        print("Your BMI is X, you are severely obese.")
+
+ 7. Conclusion:
+    - This solution adds meaning to the BMI calculation by providing a health classification.
+    - The flow of the program first calculates BMI and then uses conditional checks to print 
+      the corresponding interpretation based on the BMI value.
+    - Now the user has a better understanding of what their BMI means.
+
+=====================================================
+======================== [Interactive Coding Exercise] Leap Year
+
+ Notes on Building a Leap Year Checker Program
+
+ This is a tricky challenge that we're going to tackle step by step.
+
+ Objective:
+ The goal is to build a program that checks whether a given year is a leap year or not.
+ A leap year has 366 days (instead of the usual 365), with an extra day in February.
+
+ Why Leap Year Exists:
+ We need a leap year because of the Earth's orbit. 
+ A year is slightly more than 365 days long. It’s actually about 365.2422 days. 
+ So, every four years, an extra day is added to account for the extra 0.2422 days per year.
+
+ Steps for Determining if a Year is a Leap Year:
+ To check if a year is a leap year, we follow these rules:
+ 1. If the year is divisible by 4, it might be a leap year.
+ 2. However, if the year is also divisible by 100, it’s not a leap year, unless...
+ 3. The year is also divisible by 400, then it is a leap year.
+
+ This is a tricky, multi-step logic that we need to handle correctly.
+
+ Understanding the Logic:
+ 1. The first step is to check if the year is divisible by 4.
+    - If it’s divisible by 4 (no remainder), we can proceed to the next step.
+    - If not divisible by 4, the year is not a leap year.
+
+ 2. The second step is to check if the year is divisible by 100.
+    - If divisible by 4 but not divisible by 100, the year is a leap year.
+    - If divisible by both 4 and 100, we need to proceed to the next step.
+
+ 3. The final step is to check if the year is divisible by 400.
+    - If divisible by 4, divisible by 100, and divisible by 400, it’s a leap year.
+    - If divisible by 4 and 100, but not divisible by 400, it’s not a leap year.
+
+ Flowchart:
+ Visualizing the process with a flowchart can be super helpful.
+ The flowchart illustrates the exact steps to follow.
+ There’s a link to the flowchart in the description box, which is a great resource to understand the logic.
+
+ Writing the Code:
+
+ Step 1: First, we need to get the year as an integer input.
+year = int(input("Enter a year: "))
+
+ Step 2: We check if the year is divisible by 4. 
+if year % 4 == 0:
+     Step 3: If divisible by 4, check if it’s also divisible by 100.
+    if year % 100 == 0:
+         Step 4: If divisible by both 4 and 100, check if divisible by 400.
+        if year % 400 == 0:
+            print(f"{year} is a leap year!")
+        else:
+            print(f"{year} is not a leap year.")
+    else:
+         Step 5: If divisible by 4 but not 100, it’s a leap year.
+        print(f"{year} is a leap year!")
+else:
+     Step 6: If not divisible by 4, it’s not a leap year.
+    print(f"{year} is not a leap year.")
+
+ Explanation of Code:
+
+ The first check (year % 4 == 0) ensures that the year is divisible by 4.
+ If not, the year is immediately not a leap year.
+
+ Then, we check the second condition (year % 100 == 0).
+ If divisible by 4 and 100, we move to the next step to check if it’s divisible by 400.
+
+ The last step is crucial. If divisible by 4 and 100, but not 400, it’s not a leap year.
+ Otherwise, if all three conditions (4, 100, 400) are true, the year is a leap year.
+
+ Testing:
+ To verify that the program works correctly, test the following cases:
+ - 2000: This year is divisible by 4, 100, and 400, so it’s a leap year.
+ - 2100: This year is divisible by 4 and 100, but not by 400, so it’s not a leap year.
+ - 2020: This year is divisible by 4 but not by 100, so it’s a leap year.
+ - 2023: This year is not divisible by 4, so it’s not a leap year.
+
+ Alternate Methods:
+ There are other ways to solve this exercise. You might use a different approach for checking conditions or combine logic in a different way.
+ The solution presented here is a clear and readable one, optimized for understanding, but feel free to explore alternatives.
+
+ Debugging Tip:
+ If you’re stuck, try drawing a flowchart or a decision tree to visualize the steps. It’s a great way to see how the logic flows.
+
+ Final Tip:
+ Always ensure you understand the logic first before coding. Take time to write it out, draw a flowchart, and think through all possible scenarios.
+ Understanding the logic makes the coding part much easier!
+
+
+=====================================================
+======================== Multiple If Statements in Succession
+
+ We are working on a rollercoaster ticketing problem.
+
+ First, let's see how we check one condition at a time.
+ We used if, elif, and else to check multiple conditions, but only one block is executed when a condition is true.
+
+ Example flow:
+ - If age is less than 12, assign price of $5.
+ - If age is between 12 and 18, assign price of $7.
+ - If age is 18 or more, assign price of $12.
+
+ But now we need to check for multiple conditions.
+ After we determine the ticket price based on age, we want to ask if the user wants a photo with their ticket.
+ This extra condition is independent of age or height.
+
+ Approach:
+ 1. Create a variable for the bill, starting at $0.
+ 2. Check the user's age to assign a base ticket price to the bill.
+ 3. After assigning the ticket price, ask the user if they want a photo. This step applies to everyone, regardless of their ticket price.
+
+ Add photo cost if the user wants it:
+ If the user says "yes" (Y), add $3 to the bill.
+ If the user says "no" (N), skip adding the $3.
+
+ Here's how to implement this:
+
+ Initializing the bill variable
+bill = 0
+
+ Age-based ticket price
+if age < 12:
+    bill = 5
+elif age < 18:
+    bill = 7
+else:
+    bill = 12
+
+ Ask if the user wants a photo
+wants_photo = input("Do you want a photo taken? Type Y for yes or N for no: ")
+
+ Check if the user wants a photo and update the bill
+if wants_photo == 'Y' or wants_photo == 'y':
+    bill += 3
+
+ Print the final bill
+print(f"Your total bill is: ${bill}")
+
+ Key points:
+ - We used 'if' to check multiple conditions independently, not like 'if, elif, else' where only one block executes.
+ - The indentation level is important to determine which block of code gets executed.
+ - We used the '+= 3' shorthand to increase the bill by $3 if the user chooses to add a photo.
+
+ Now, when running the code, we should see the base price first, then the question about the photo.
+ Based on the answer, we either add $3 to the ticket price or not, and then display the final bill.
+
+=====================================================
+======================== [Interactive Coding Exercise] Pizza Order Practice
+
+ Pizza Order Program - Step-by-step Explanation
+
+ 1. Introduction
+ - The goal is to create a program that calculates the price of a pizza based on user input.
+ - The user selects the size (small, medium, large), whether they want pepperoni, and whether they want extra cheese.
+ - Based on these choices, the program will calculate the final price.
+
+ 2. Inputs
+ The program asks for three inputs:
+ 1. Pizza Size (S, M, L)
+ 2. Pepperoni (Y or N)
+ 3. Extra Cheese (Y or N)
+
+ 3. Price Modifiers
+ Pizza Size:
+ - Small (S) = $15
+ - Medium (M) = $20
+ - Large (L) = $25
+ Pepperoni:
+ - Small pizza adds $2 for pepperoni.
+ - Medium and large pizzas add $3 for pepperoni.
+ Extra Cheese:
+ - Adds $1 to the total for any pizza size.
+
+ 4. Starting Code
+ We begin by creating a variable called `bill` and initializing it to 0, which will hold the total price of the pizza.
+
+bill = 0
+
+ 5. Step 1: Size Input
+ We ask the user to input the pizza size. The input can be 'S', 'M', or 'L'.
+ Depending on the size input, we add the corresponding base price to `bill`.
+
+size = input("What size pizza do you want? S, M, or L: ").upper()
+
+if size == "S":
+    bill += 15   Small pizza
+elif size == "M":
+    bill += 20   Medium pizza
+elif size == "L":
+    bill += 25   Large pizza
+
+ 6. Step 2: Pepperoni Input
+ We ask the user if they want pepperoni. The input is either 'Y' (yes) or 'N' (no).
+ If the user chooses yes, the price for pepperoni is added to the bill based on the size of the pizza.
+
+pepperoni = input("Do you want pepperoni? Y or N: ").upper()
+
+if pepperoni == "Y":
+    if size == "S":
+        bill += 2   Small pizza with pepperoni
+    else:
+        bill += 3   Medium or Large pizza with pepperoni
+
+ 7. Step 3: Extra Cheese Input
+ We ask the user if they want extra cheese. The input is either 'Y' (yes) or 'N' (no).
+ If the user chooses yes, we add $1 to the bill for extra cheese.
+
+extra_cheese = input("Do you want extra cheese? Y or N: ").upper()
+
+if extra_cheese == "Y":
+    bill += 1   Extra cheese price
+
+ 8. Step 4: Final Output
+ After all the inputs and modifications to the bill, we print out the final price using an f-string.
+
+print(f"Your final bill is: ${bill}")
+
+ 9. Things to Remember
+ - Input is case-insensitive, so it's a good idea to use `.upper()` to standardize user input.
+ - Ensure the order of checks is correct, especially for sizes and additional options like pepperoni and extra cheese.
+ - Use `if`, `elif`, and `else` for conditional checks based on the size, toppings, and extra options.
+
+ 10. Test Cases
+ - Small pizza with pepperoni and no extra cheese → Expected: $17
+ - Medium pizza with pepperoni and extra cheese → Expected: $24
+ - Large pizza with no pepperoni and extra cheese → Expected: $26
+ - Large pizza with pepperoni and extra cheese → Expected: $29
+
+=====================================================
+======================== Logical Operators
+
+ Logical Operators in Python: and, or, not
+
+ 1. Introduction to Logical Operators
+ In this lesson, we're going to learn about logical operators:
+ - 'and' - Both conditions must be true.
+ - 'or' - Only one condition must be true.
+ - 'not' - Reverses the condition (true becomes false, false becomes true).
+
+ 2. Logical Operator: and
+ - The 'and' operator checks if both conditions are true.
+ - If both conditions are true, the result is true; otherwise, it's false.
+
+ Example of 'and' operator:
+a = 12
+
+ Check if a is greater than 15 and less than 13
+ This will evaluate to False because a is not greater than 15, even though it is less than 13.
+print(a > 15 and a < 13)   False
+
+ Check if a is greater than 10 and less than 13
+ This will evaluate to True because both conditions are true.
+print(a > 10 and a < 13)   True
+
+ 3. Logical Operator: or
+ - The 'or' operator checks if at least one of the conditions is true.
+ - If one or both conditions are true, the result is true.
+
+ Example of 'or' operator:
+print(a > 15 or a < 13)   True (since a < 13 is true)
+
+ 4. Logical Operator: not
+ - The 'not' operator reverses the condition.
+ - If the condition is true, it becomes false. If it's false, it becomes true.
+
+ Example of 'not' operator:
+print(not a > 15)   True (since a > 15 is false, not reverses it to true)
+
+ 5. Scenario: Rollercoaster Ticketing System with Midlife Crisis Discount
+
+ The company offers free tickets to people aged between 45 and 55. Let's incorporate this into the program.
+
+ User's age input:
+age = int(input("Enter your age: "))
+
+ Ticket Pricing Based on Age
+if age < 12:
+    print("You're a child. Ticket price: $5.")
+elif 12 <= age <= 18:
+    print("You're a teenager. Ticket price: $10.")
+elif 45 <= age <= 55:   Midlife crisis free ticket
+    print("Everything's going to be ok. Have a free ride on us!")
+else:
+    print("You're an adult. Ticket price: $15.")
+
+ 6. Conclusion
+ Logical operators ('and', 'or', 'not') are powerful tools that help us combine conditions
+ and make more complex decisions within our programs. We've applied the 'and' operator
+ to check if the user's age is within a specific range, and we've also used 'not' to
+ reverse conditions when necessary.
+
+ In the next lesson, we will practice using logical operators with more exercises.
+
+=====================================================
+======================== [Interactive Coding Exercise] Love Calculator
+
+// Love Calculator - Notes
+
+// 1. Introduction
+// - The goal is to create a program that calculates a love score between two people based on their names.
+// - This is a fun exercise to practice programming skills, even if you don't believe in love scores.
+
+// 2. The Method
+// - The method we'll use comes from a Buzzfeed article.
+// - First, we analyze the names by counting the occurrences of the letters in two words: "TRUE" and "LOVE".
+//   - TRUE: T, R, U, E
+//   - LOVE: L, O, V, E
+
+// 3. Steps to Implement the Calculator
+// - Step 1: Get the names of the two people.
+//   - We need two variables (name1 and name2) to store the names.
+
+// - Step 2: Combine both names into a single string.
+//   - This helps us work with both names together.
+//   - Convert everything to lowercase to avoid case differences (e.g., "David" vs "david").
+
+// - Step 3: Calculate the first digit of the love score.
+//   - Check how many times the letters from "TRUE" (T, R, U, E) appear in the combined string.
+//   - Use a ".count()" method to count each letter's occurrences.
+//   - Add the counts together to get the first digit.
+
+// - Step 4: Calculate the second digit of the love score.
+//   - Do the same for the letters in "LOVE" (L, O, V, E).
+//   - Count how many times each of these letters appears in the combined string.
+//   - Add the counts together to get the second digit.
+
+// 4. Combine the Digits
+// - After calculating the first and second digits, we need to combine them into a two-digit love score.
+//   - This is done by converting the digits to strings and concatenating them.
+//   - Remember, this is string concatenation, not addition. So, "9" + "8" = "98" (not 17).
+
+// 5. Convert to Integer
+// - After concatenating the digits, convert the love score back to an integer for comparison.
+
+// 6. Interpret the Score
+// - Now, we check the score against certain conditions to interpret it:
+//   - If the score is less than 10 or greater than 90, print: "You go together like coke and mentos."
+//   - If the score is between 40 and 50, print: "You are alright together."
+//   - Otherwise, simply print the love score without any special interpretation.
+
+// 7. Examples
+// - For example, if the names are "David Beckham" and "Victoria Beckham":
+//   - Count the occurrences of T-R-U-E and L-O-V-E in the combined names.
+//   - Suppose T-R-U-E occurs 5 times and L-O-V-E occurs 3 times. The final love score is 53.
+//   - The interpretation will depend on the score's value.
+
+// End of notes.
+
+=====================================================
+======================== Day 3 Project Treasure Island
+
+Final Project: Choose Your Own Adventure Game
+
+Objective:
+- Create a simplified version of a "Choose Your Own Adventure" game where the story evolves based on the player's choices.
+
+Story Structure:
+- Start with a decision point where the player has to choose between two options: left or right at a crossroad.
+- Each choice leads to a different outcome. For example:
+  - If the player chooses right, they fall into a hole, resulting in a "Game Over."
+  - If the player chooses left, they continue their journey and face another decision: whether to wait for a boat or swim across a lake.
+
+Game Flow:
+1. First Decision: The player is at a crossroad and must choose either left or right.
+   - If they choose right, it's a "Game Over."
+   - If they choose left, they proceed to the next decision point.
+2. Second Decision: Upon reaching a lake, the player must decide whether to wait for a boat or swim across.
+   - If they choose wait for a boat, they progress to the final decision point.
+   - If they choose to swim, it results in "Game Over" due to the danger of crocodiles.
+3. Final Decision: The player reaches a door and must choose between red, yellow, or blue.
+   - If they choose yellow, they win the game.
+   - If they choose red or blue, it's "Game Over."
+
+Additional Features:
+- Input handling: Use the .lower() method to ensure that the input is case-insensitive (e.g., "Left" or "left" will both be valid).
+- Error Handling: Ensure that only valid inputs (left/right, wait/swim, red/yellow/blue) are accepted.
+- Game Over Logic: The game should provide feedback and a reason when the player loses (e.g., falling into a hole, choosing the wrong door).
+
+Improvements:
+- The game could have additional levels, better branching, and more decisions to increase complexity.
+- Consider implementing a scoring system based on how quickly the player wins or how many wrong choices they make.
+
+
+
+
+
+=====================================================
+======================== Share and Show off your Project!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
