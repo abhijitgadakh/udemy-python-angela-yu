@@ -1,7 +1,7 @@
 
-print("Abhijit" + " " + "Gadakh");
-print("Abhijit " + "Gadakh");
-print("Abhijit" + " Gadakh");
+print("Abhijit" + " " + "Gadakh")
+print("Abhijit " + "Gadakh")
+print("Abhijit" + " Gadakh")
 
 
 
